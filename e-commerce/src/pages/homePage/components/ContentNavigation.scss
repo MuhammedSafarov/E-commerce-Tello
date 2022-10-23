@@ -1,0 +1,112 @@
+.content-navigation{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 20px;
+
+    .nav-text{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .product-link{
+        font-size: 13px;
+    }
+
+    a{
+        text-decoration: none;
+        color: dodgerblue;
+    }
+    
+    
+    .bolder{
+        font-size: 22px;
+        font-weight: initial;
+    }
+
+    .low-opacity{
+        opacity: 0.5;
+    }
+    .low-opacity{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .nav-card{
+        border-radius: 8px;
+        padding: 10px;
+        position: relative;
+        #xiaomi{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .mobile-products{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $contentNav-bg;
+        margin: 10px;
+        width: 550px;
+        height: 610px;
+    }
+    .other-products{
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .nav-card{
+            img{
+                position: absolute;
+                width: 230px;
+                height: 220px;
+                bottom: 0;
+                right: 20px;
+            }
+        }
+
+        .smart-watch{
+            display: flex;
+            background-color: $contentNav-bg;
+            width: 500px;
+            height: 300px;
+        }
+        .accessories{
+            display: flex;
+            background-color: $contentNav-bg;
+            margin-top: 14px;
+            width: 500px;
+            height: 300px;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .content-navigation{
+        flex-direction: column;
+        width: 90%;
+        .mobile-products{
+            width: 100%;
+        }
+        .other-products{
+            width: 100%;
+            margin-left: 0px;
+            .nav-card{
+                width: 100%;
+                img{
+                    width: 50%;
+                    height: 60%;
+                }
+            }
+        }
+
+    }
+}

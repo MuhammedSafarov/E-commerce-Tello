@@ -1,0 +1,133 @@
+$link-color: #2dd06e;
+
+.footer {
+  background-color: black;
+  width: 100%;
+  margin-top: 10px;
+
+  .footer-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+
+    .first-p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin-right: 4rem;
+      .social-media-icons {
+        .social-icon {
+          margin: 10px;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    h3 {
+      color: white;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+      img,
+      a {
+        margin-top: 20px;
+      }
+      a {
+        transition: 0.4s;
+      }
+      a:hover {
+        color: $link-color;
+      }
+    }
+
+    .fourth-p {
+      .contact {
+        display: flex;
+        align-items: center;
+        a {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .footer-end {
+    border-top: 0.5px solid gray;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer-first-section {
+      display: flex;
+      align-items: center;
+      p,
+      img {
+        margin-left: 10px;
+      }
+    }
+    div {
+      color: white;
+      margin-left: 10px;
+    }
+    .footer-second-section {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      div {
+        transition: 0.4s;
+        margin-right: 2rem;
+      }
+      div:hover {
+        cursor: pointer;
+        color: $link-color;
+      }
+    }
+  }
+  .nav-icon {
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-navigation {
+    flex-direction: column;
+    align-items: center;
+    .first-p {
+      margin-left: 40px;
+    }
+    .second-p,
+    .third-p {
+      a {
+        text-align: center;
+      }
+    }
+    .nav {
+      margin-top: 25px;
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+  .footer-end {
+    border: none;
+    flex-direction: column;
+    .footer-first-section {
+      padding-top: 20px;
+      padding: 10px;
+      img {
+        margin-left: 0px;
+      }
+    }
+    .footer-second-section {
+      order: -1;
+    }
+  }
+}

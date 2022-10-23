@@ -1,0 +1,17 @@
+.content-slider {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  .slider-p {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content-slider{
+    width: 98%;
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,97 @@
+.login-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  height: 70vh;
+  button {
+    cursor: pointer;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    .login-with-social {
+      display: flex;
+      justify-content: space-around;
+    }
+    div {
+      margin: 10px;
+    }
+    #and {
+      text-align: center;
+      color: gray;
+    }
+    .email,
+    .password {
+      display: flex;
+      flex-direction: column;
+      input {
+        padding: 12px;
+        width: 100%;
+        margin: 5px;
+        background-color: #f2f2f2;
+        border: 0;
+        border-radius: 8px;
+      }
+      label {
+        padding-left: 5px;
+        font-size: 15px;
+      }
+    }
+    .password-link {
+      position: relative;
+      margin-top: 0px;
+      .links {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        text-decoration: none;
+        color: dodgerblue;
+        font-size: 15px;
+      }
+    }
+    button {
+      margin-top: 2rem;
+      padding: 10px;
+      background-color: #2fd06e;
+      border: 0;
+      border-radius: 8px;
+      color: white;
+    }
+    h3 {
+      text-align: center;
+    }
+    .login-with-social {
+      svg {
+        margin: 10px;
+      }
+    }
+  }
+  .login-picture {
+    .sign-up-p {
+      display: flex;
+      justify-content: flex-end;
+      margin: 10px;
+      .sign-up {
+        text-decoration: none;
+        color: dodgerblue;
+        font-size: 15px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    .login-form {
+      width: 100% !important;
+    }
+    .login-picture {
+      display: none;
+    }
+  }
+}

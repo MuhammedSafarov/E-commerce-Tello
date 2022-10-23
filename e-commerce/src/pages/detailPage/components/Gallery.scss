@@ -1,0 +1,28 @@
+.product-slider {
+  margin: 20px;
+  margin-left: 15%;
+  .big-img-slider {
+    margin-left: 10%;
+    margin-bottom: 20px;
+    img {
+      max-width: 300px;
+      max-height: 400px;
+    }
+  }
+  .small-img-slider {
+    img {
+      max-width: 100px;
+      max-height: 200px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .slider{
+    padding: 0;
+  }
+  .product-slider{
+    margin: 0;
+    width: 100%;
+  }
+}

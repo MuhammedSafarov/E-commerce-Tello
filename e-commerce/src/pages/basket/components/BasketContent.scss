@@ -1,0 +1,136 @@
+.general-container {
+  width: 100%;
+  background-color: #faf9f9;
+  padding: 20px;
+  
+  .products-length{
+    margin: 15px;
+    p{
+      font-weight: bold;
+    }
+  }
+  .basket-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+    .basket-products {
+      width: 70%;
+      .selected-products {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 8px;
+        background-color: white;
+
+        .selected-product-info {
+          display: flex;
+          align-items: center;
+          img {
+            max-width: 110px;
+            max-height: 130px;
+          }
+          .name-price {
+            h4,
+            h5 {
+              margin: 8px;
+            }
+          }
+        }
+        .selected-product-count {
+          display: flex;
+          align-items: center;
+          margin: 10px;
+          .inc-dec {
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            .minus,
+            .plus,
+            .plus-btn,
+            .minus-btn {
+              padding: 1px;
+              border-radius: 100%;
+              border: none;
+              margin: 10px;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+    .basket-price {
+      display: flex;
+      flex-direction: column;
+      margin-left: 7rem;
+      padding: 20px;
+      width: 20%;
+      background-color: white;
+      border-radius: 8px;
+      height: 18rem;
+      h3 {
+        margin-bottom: 10px;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 8px;
+      }
+      .total-price {
+        width: 100%;
+        padding: 13px;
+        margin: 10px;
+        border-top: 1px solid black;
+        .price {
+          color: red;
+          display: flex;
+          align-items: center;
+          #total-price-current{
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .general-container {
+    margin-top: 4rem;
+    .basket-container {
+      .basket-products {
+        width: 100% !important;
+        .selected-products {
+          padding: 15px !important;
+          margin-top: 20px !important;
+          flex-direction: column;
+          position: relative;
+          .selected-product-count {
+            .delete-btn {
+              position: absolute;
+              top: 20px;
+              right: 20px;
+            }
+          }
+          .selected-product-info {
+            flex-direction: column;
+            .name-price {
+              .product-name {
+                font-size: 20px;
+              }
+              .product-price {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+      .basket-price {
+        display: none !important;
+      }
+    }
+  }
+}

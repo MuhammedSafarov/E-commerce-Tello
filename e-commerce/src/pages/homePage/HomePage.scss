@@ -1,0 +1,25 @@
+$input-bg: #f2f2f2;
+$maincolor: #2dd06e;
+$shadow-color: rgba(205, 197, 197, 0.892);
+$contentNav-bg: #F1E4DF;
+
+@import './components/Navbar.scss';
+@import './components/NavigationMenu.scss';
+@import './components/Content.scss';
+@import './components/BestSeller.scss';
+@import './components/ContentNavigation.scss';
+@import './components/Advertisements.scss';
+@import './components/Services.scss';
+@import './components/Cooperation.scss';
+@import './components/Footer.scss';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.homepage{
+  width: 100%;
+  position: relative;
+}

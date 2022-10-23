@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar .first-p, .navbar .second-p, .navbar .third-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .first-p svg {
+  margin: 10px;
+}
+
+.navbar .second-p form {
+  position: relative;
+}
+
+.navbar .second-p form #search {
+  border: none;
+  position: absolute;
+  top: 11px;
+  left: 8px;
+}
+
+.navbar .second-p form #search .nav-icons {
+  color: gray;
+  font-size: 15px;
+}
+
+.navbar .second-p input {
+  padding: 18px;
+  padding-left: 30px;
+  height: 30px;
+  width: 400px;
+  border: 0.5px solid gray;
+  border-radius: 8px;
+  background-color: #F2F2F2;
+}
+
+.navbar .third-p .nav-icons {
+  margin: 12px;
+  font-size: 18px;
+}
+
+.headbar {
+  width: 80%;
+  margin-top: 12px;
+}
+
+.headbar .headbar-sections {
+  font-size: 14px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.headbar .headbar-sections li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.headbar .headbar-sections li:hover {
+  cursor: pointer;
+  color: #2DD06E;
+  border-radius: 8px;
+}
+/*# sourceMappingURL=HomePage.css.map */

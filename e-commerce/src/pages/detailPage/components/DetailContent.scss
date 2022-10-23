@@ -1,0 +1,124 @@
+$Btn-color: #2dd06e;
+$text-color: #828282;
+
+.detail-container {
+  .success-message {
+    width: 320px;
+  }
+  .products-details {
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4rem;
+    margin-left: 8rem;
+
+    .slider {
+      width: 40%;
+    }
+    .product-info {
+      display: flex;
+      flex-direction: column;
+
+      .stars {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+        margin-left: 20px;
+        ul {
+          display: flex;
+          list-style: none;
+        }
+      }
+
+      .basket {
+        position: relative;
+        .basket-icon {
+          position: absolute;
+          color: white;
+          top: 15px;
+          left: 25px;
+        }
+      }
+      .basket-btn {
+        padding: 10px;
+        width: 10rem;
+        height: 3rem;
+        border: none;
+        border-radius: 8px;
+        background-color: $Btn-color;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      div {
+        margin: 15px;
+      }
+      .basket {
+        margin: 20px;
+      }
+
+      .inc-dec {
+        display: flex;
+        align-items: center;
+
+        .minus,
+        .plus,
+        .plus-btn,
+        .minus-btn {
+          background-color: rgb(218, 214, 214);
+          padding: 7px;
+          border-radius: 100%;
+          border: none;
+        }
+      }
+
+      .price-div {
+        padding-left: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #mobile-basket-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .products-details {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between !important;
+    margin: 0;
+    margin-left: 0 !important;
+
+    .slider {
+      width: 80% !important;
+      margin: 0;
+    }
+
+    .product-info {
+      width: 75%;
+      margin-top: 30px;
+      .basket {
+        margin: 10px !important;
+      }
+      .product-name {
+        font-size: 13px;
+      }
+      .price-div {
+        .price {
+          font-size: 16px;
+        }
+        #mobile-basket-btn {
+          display: flex !important;
+        }
+      }
+      #desktop-basket-btn {
+        display: none;
+      }
+    }
+  }
+}
