@@ -1,2 +1,2 @@
 # E-commerce-Tello
-https://msecommerce.netlify.app
+https://mse-commerce.netlify.app/
